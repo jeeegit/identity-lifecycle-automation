@@ -29,3 +29,25 @@ The goal is to automate the **Joiner–Mover–Leaver (JML)** process:
 ---
 
 ## 📂 Repository Structure
+identity-lifecycle-automation/
+│
+├── README.md                # Project overview
+├── docs/                    # Documentation & diagrams
+│   ├── architecture.md
+│   ├── naming-policy.md
+│   └── flow-diagram.png
+│
+├── scripts/                 # PowerShell scripts
+│   ├── New-CompanyGroup.ps1
+│   ├── New-CompanyGroupValidated.ps1
+│   ├── New-CompanyGroupGraph.ps1
+│   └── JML-Automation.ps1
+│
+├── templates/               # ARM / Logic Apps templates
+│   ├── JML-LogicApp.json
+│   └── group-policy.json
+│
+├── examples/                # Sample HR data
+│   ├── HRData.csv
+│   └── HRData.json
+└── .gitignore
