@@ -1,5 +1,7 @@
 #Connect to Microsoft Graph
-Connect-MgGraph -Scopes "Group.ReadWrite.All"
+#Connect-MgGraph -Scopes "Group.ReadWrite.All"
+#Connect-MgGraph -Scopes "Group.ReadWrite.All" -UseDeviceAuthentication
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All" -UseDeviceAuthentication
 
 #Define group properties
 $groupName = "HR-ReadOnly"
